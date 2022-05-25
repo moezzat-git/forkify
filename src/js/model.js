@@ -147,10 +147,3 @@ export const uploadRecipe = async function (newRecipe) {
     throw err;
   }
 };
-
-//post data to
-
-var h = function k() {
-  return 40;
-};
-console.log(k());

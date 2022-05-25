@@ -87,6 +87,8 @@ const uploadRecipe = async function (data) {
   setTimeout(addRecipeView._toggleWindow(), 2500);
 };
 
+const welcome = () => console.log('Welcome to my website');
+
 //Subscriber
 const init = function () {
   bookmarkView.addHandlerLoad(controlBookmarks);
@@ -96,7 +98,7 @@ const init = function () {
   recipeSearch.addHandlerSearch(getSearchResult);
   pagination.addHandlerPagination(paginationHandler);
   addRecipeView.addHandlerUpload(uploadRecipe);
-  console.log('Hello!');
+  welcome();
 };
 
 init();
